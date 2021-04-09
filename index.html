@@ -1,0 +1,493 @@
+<!doctype html>
+<html lang="cs">
+
+<head>
+    <title>Webové aplikace</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+        <a class="navbar-brand" href="index.html">Webové aplikace</a>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#typy">Typy webových aplikací</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#faze">Fáze návrhu aplikace</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#bezpecnost">Bezpečností rizika</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#redakce">Redakční systémy a e-commerce</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="p-5 text-center">
+        <h1 class="display-2 mt-5 text-uppercase text-white">Webové aplikace</h1>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="row content">
+                <div id="pad">
+                    <h2 id="typy">Typy webových aplikací</h2>
+                    <ul>
+                        <p>
+                            <li>API (zkratka pro Application Programming Interface) označuje v informatice rozhraní pro programování aplikací.
+                            </li>
+
+                            <li>
+                                Jde o komplex procedur, funkcí, tříd či protokolů nějaké knihovny (ale třeba i jiného programu nebo jádra operačního systému), které může programátor využívat. API určuje, jakým způsobem jsou funkce knihovny volány ze zdrojového kódu programu.</li>
+                            <li>
+                                V programátorské praxi se můžeme setkat s celou řadou API - například s API operačních systémů (unixové systémy používají standard POSIX, OS od Microsoftu zase Windows API), grafickými API (OpenGL, DirectX, Vulkan) nebo s API databázových a informačních
+                                systémů. </li>
+                            <li>
+                                API se nyní hojně využívá při vývoji mobilních i webových aplikací a tvorbě internetových stránek. Smyslem webových API je zajištění komunikace mezi dvěma platformami, které si vzájemně vyměňují data. Umožňují využívat již naprogramovaná řešení a integrovat
+                                je do vlastních webů. </li>
+                            <li>
+                                V praxi se s integrací aplikačního rozhraní setkáváme třeba na stránkách zobrazujících polohu obchodu na Google mapách. V takovém případě je využito API z Google Map, které volají vrstvu kódu, jež zobrazuje požadovaná data. </li>
+                            <li>
+                                API jsou využívána také čtečkami zpráv (RSS), kde umožňují výpis článků, nebo při přihlášení na webu a v mobilní aplikaci pomocí externího účtu (Facebook, LinkedIn atd.). Stejně tak umožňují přidávání komentářů například na sociální sítě. API může být
+                                součástí účetního software a díky tomu lze automaticky vygenerovat fakturu při nákupu z e-shopu a zapsat ji do databáze v účetnictví. </li>
+
+                            <li>Další populární webová API: </li>
+                            <ul>
+                                YouTube API – umožňují vývojářům integrovat videa a další funkcionalitu této populární multimediální platformy. Rozhraní lze tedy využít například pro zobrazení streamů na webu nebo pro vložení playlistu.
+                                <br> Flickr API – nabízí přístup k databázi této populární sociální sítě na sdílení fotografií. <br> Twitter API – pro sdílení tweetů nebo využití dat z vyhledávání. <br> Amazon API – umožňují na webu zobrazovat produkty
+                                nabízené na stránkách Amazonu. Mohou tak být využity jako prostředek pro zpeněžení (monetizaci) stránek. <br>
+                            </ul>
+                    </ul>
+                    <br>
+                    <h2 id="faze">Fáze návrhu webové aplikace</h2>
+                    <ol>
+                        <b>
+                            <li id="vetsi">Strategie</li>
+                        </b>
+                        <ul>
+                            <li>Hledání kompromisu mezi potřebami uživatelů budoucí aplikace a zájmů tvůrců aplikace
+                            </li>
+                            <li>Je třeba zjistit a pochopit cílovou skupinu uživatelů, jejich způsob uvažování a zvyky, zohlednit je v návrhu aplikace</li>
+                        </ul>
+                        <b>
+                            <li id="vetsi">Specifikace požadavků</li>
+                        </b>
+                        <ul>
+                            <li>Na základě získaných informací jsou specifikovány všechny funkce a možnosti, jež by měla aplikace a její <b>GUI</b> pokrývat</li>
+                            <ul>
+                                <li>Grafické uživatelské rozhraní (Graphical User Interface - GUI) </li>
+                                <li>Kombinace technologíí a prostředků, které umožnují uživateli komunikovat s počítačem a aplikací
+                                </li>
+                                <li>V případě webových aplikací jde především o grafické či textové prvky a jejich rozmístění
+                                </li>
+                            </ul>
+                            <li>Výsledkem by měl být dokument s popisem požadovaných funkcí a forem obsahu</li>
+                        </ul>
+                        <b>
+                            <li id="vetsi">Návrh struktury</li>
+                        </b>
+                        <ul>
+                            <li>V této fázi se řeší tzv. interakční design</li>
+                            <li>Pomocí Use Case diagramů (případu užití) se zobrazují vazby mezi jednotlivými částmi aplikace a akce, které bude uživatel moci provádět, včetně možných reakcí aplikace</li>
+                        </ul>
+                        <ul>
+                            <li>V této fázi se řeší tzv.</li>
+                            <ul>
+                                <li>Informační design (jak prezentovat informace generované aplikací, aby došlo k jejich správnému pochopení)</li>
+                                <li>Interface design (výběru jednotlivých druhů GUI komponent k provedení určité činnosti)
+                                </li>
+                                <li>Design navigace (jak se budou v prostředí aplikace pohybovat uživatelé)</li>
+                            </ul>
+                            <li>Celkový pohled lze získat sdružením poznatků a vytvořit drátěný model uživatelského rozhraní - <b>wireframe</b></li>
+                            <li>Jeho cílem je určit hlavní části aplikace a ilustrovat jejich přibližné rozmístění (schématické obrázky, v nichž jsou potlačeny detaily vzhledu GUI komponent i obsahu)
+                            </li>
+                        </ul>
+                        <b>
+                            <li id="vetsi">Vizuální vzhled</li>
+                        </b>
+                        <ul>
+                            <li>Webdesignéři připravují vizuální vzhled jednotlivých komponent stránky podle vytvořených wireframů a storyboardů</li>
+                            <li>Na základě grafického manuálu vznikají barevná schémata, která budou v aplikaci použita, jsou vybírány typy písem a vytvářen graficky homogenní vzhled všech komponent</li>
+                        </ul>
+                        <b>
+                            <li id="vetsi">Testování</li>
+                        </b>
+                        <ul>
+                            <li>Může probíhat v uzavřené skupině i v testovacím provozu aplikace pomocí speciálních analytických nástrojů pro web</li>
+                            <ul>
+                                <li>Analýzy návštěvnosti</li>
+                                <li>Teplotní mapy</li>
+                                <li>Sledování pohybů myši a kliknutí</li>
+                                <li>Nahrávání uživatelské aktivity</li>
+                                <li>Atd.</li>
+                            </ul>
+                        </ul>
+                    </ol>
+                    <br>
+                    <hr>
+                    <div>
+                        <h4 id="center">Responzivní design</h3>
+                            <p>
+                                Jedním z rysů moderních GUI je oddělení obsahu od grafické interpretace. To má pozitivní vliv především při větších úpravách aplikace, ale také při vytváření GUI aplikace pro jiné platformy. Responzivní (někdy adaptivní) design je způsob stylování HTML
+                                dokumentu, které zaručí, že zobrazení stránky bude optimalizováno pro všechny druhy nejrůznějších zařízení (mobily, netbooky, tablety atd.). Díky vlastnosti Media Queries (součást CSS3), lze rozpoznat vlastnosti zařízení,
+                                na kterém je stránka prohlížena, a přizpůsobit její obsah i vzhled. Responzivní web design má tři základní úrovně: Flexibilní struktury se dosahuje pomocí procentních šířek. Jednotlivé šířky elementů tak nejsou zadávány
+                                v pixelech, nýbrž v procentech. Media Queries jsou pravidla, díky kterým lze měnit stylování dokumentu v závislosti na šířce obrazovky zobrazovaného zařízení. @media (max-width: 780px){...} K urychlení a usnadnění práce
+                                webdesignerů byly vytvořeny některé responzivní frameworky, jakými jsou např. Bootstrap nebo Foundation.
+                            </p>
+                            <h4 id="center">Webové formuláře</h4>
+                            <p>
+                                Formuláře slouží k zadávání dat a jsou velmi častými prvky webových aplikací. Používají se k přihlašování uživatelů, pro vyhledávání, pro uživatelské komentáře, k vyplňování zákaznických údajů v e-shopech atd. Data mohou být z formuláře odeslána na server,
+                                kde jsou zpracována pomocí serverových skriptů (např. PHP) a uložena do databáze nebo souboru, odeslána mailem apod.
+                            </p>
+                            <p>
+                                Data vkládaná do formuláře mohou bý různá - podle atributu typ:
+                            </p>
+                            <br>
+                            <table style="width:50%; margin-left:200px;">
+                                <tr>
+                                    <th>Typ</th>
+                                    <th>Použití</th>
+                                </tr>
+                                <tr>
+                                    <td>text</td>
+                                    <td>Vložení jednořádkového textu</td>
+                                </tr>
+                                <tr>
+                                    <td>password</td>
+                                    <td>Pole pro heslo</td>
+                                </tr>
+                                <tr>
+                                    <td>file</td>
+                                    <td>Pole pro upload souboru</td>
+                                </tr>
+                                <tr>
+                                    <td>checkbox</td>
+                                    <td>Zaškrkávací políčko</td>
+                                </tr>
+                                <tr>
+                                    <td>radio</td>
+                                    <td>Přepínač</td>
+                                </tr>
+                                <tr>
+                                    <td>date</td>
+                                    <td>Zadávání data</td>
+                                </tr>
+                                <tr>
+                                    <td>image</td>
+                                    <td>Vložení obrázku</td>
+                                </tr>
+                                <tr>
+                                    <td>submit</td>
+                                    <td>Odesílací tlačítko</td>
+                                </tr>
+                                <tr>
+                                    <td>reset</td>
+                                    <td>Nastaví výchozí hodnoty</td>
+                                </tr>
+                            </table>
+                            <br>
+                            <h4 id="center">Přístupnost webu</h3>
+                                <p>
+                                    Přístupnost webových stránek (webové aplikace) znamená bezproblémového používání všemi skupinami uživatelů, včetně handicapovaných osob. Špatně navržené stránky či grafické rozhraní aplikace, které nerespektuje pravidla přístupnosti, může způsobit nedostupnost
+                                    této služby pro lidi např. se zrakovým postižením (Blind Friendly Web), uživatele s pomalejším připojením, seniory, apod. Podle zákona musejí všechny weby státní správy projít auditem přístupnosti. Celosvětově uznávanou
+                                    metodikou, která se zabývá auditem a přístupností internetových stránek, je WCAG, jejímž autorem je konsorcium W3C. Jednotlivé principy obsahují vždy několik pravidel a kritéria, rozdělená do třech úrovní: nejnižší
+                                    úroveň je označována jako úroveň A, nejvyšší jako AAA.
+                                </p>
+                                <br>
+                                <br>
+                                <div class="row">
+                                    <h2 id="bezpecnost">Bezpečnostní rizika webových aplikací</h2>
+                                    <hr>
+                                    <div>
+                                        <br>
+                                        <hr>
+                                        <h4>Cross-site scripting (XSS)</h3>
+                                            <p>
+                                                je metoda narušení WWW stránek využitím bezpečnostních chyb ve skriptech (především neošetřené vstupy).<br> Útočník díky těmto chybám v zabezpečení webové aplikace dokáže do stránek podstrčit svůj vlastní
+                                                javascriptový kód, což může využít buď pouze k poškození vzhledu stránky, jejímu znefunkčnění, získávání citlivých údajů návštěvníků stránek nebo obcházení bezpečnostních prvků aplikace <br> Často je též
+                                                využíván při phishingu tak, že je skrze XSS zranitelnosti uživateli ukázán jiný obsah na jinak důvěryhodné stránce.
+                                            </p>
+                                            <b> Obrana: </b>
+                                            <ul>
+                                                <li> V textech zadávaných uživateli je třeba speciální znaky nahrazovat entitami, např. &lt nahrazovat za &amplt;, v java aplikacích nejlépe pomocí značky &ltc:out value="${hodnota}" /&gt.
+                                                </li>
+                                                <li> Kontrolovat URL od uživatele, která jdou do obrázků, odkazů a podobně, protože mohou začínat např. na javascript:. Kvůli různým variacím a budoucím změnám je vhodné použít pro tuto kontrolu whitelist.
+                                                </li>
+                                            </ul>
+                                            <br>
+                                            <hr>
+                                    </div>
+                                    <div>
+                                        <h4>Cross-site request forgery (XSRF)</h3>
+                                            <p>
+                                                je pasivní útok, kdy útočník nachystá na nějakou stránku kód, který způsobí vyvolání URL na nějakém jiném serveru, kde uživatel může být stále přihlášen.
+                                            </p>
+                                            <b> Obrana: </b>
+                                            <ul>
+                                                <li> Důležité akce (třeba převod peněz) je třeba potvrzovat, do přihlašovacích formulářů je třeba přidávat náhodně generované hodnoty.
+                                                </li>
+                                                <li> V administrační části internetových aplikací, pro akce, které mažou určité záznamy nebo je jiným způsobem mění, se doporučuje zásadně používat HTTP metodu POST.
+                                                </li>
+                                                <li>
+                                                    Používat autorizační token – náhodně vygenerovaný řetězec pro danou akci a pro aktuálního uživatele.
+                                                </li>
+                                            </ul>
+                                            <br>
+                                            <hr>
+                                    </div>
+                                    <div>
+                                        <h4>Clickjacking</h3>
+                                            <p>
+                                                Cizí stránka, na kterou je veden útok, je zobrazena na útočníkově stránce v iframe tak, že je vidět jen část bez bližšího kontextu. (Je možné využít i opacity v CSS.) Uživatel je naveden ke kliknutí na tuto část stránky, čímž provede nějakou akci, například
+                                                hlasování v anketě.
+                                            </p>
+                                            <b> Obrana: </b>
+                                            <ul>
+                                                <li> Lze se bránit hlavičkou X-Frame-Options, která je v některých prohlížečích podporována, a Javascriptem. Princip spočívá v zabránění zobrazení stránky v rámci.
+                                                </li>
+                                            </ul>
+                                            <br>
+                                            <hr>
+                                    </div>
+                                    <div>
+                                        <h4>Session hijacking</h3>
+                                            <p>
+                                                je útok, při kterém útočník odposlechne cookie použité pro označení úspěšně autentizovaného uživatele, a začne se za něj vydávat.
+                                            </p>
+                                            <b> Obrana: </b>
+                                            <ul>
+                                                <li> Session cookies musí mít označení secure, tedy mohou být poslána jen přes šifrovaná SSL spojení.
+                                                </li>
+                                                <li> V případě předávání session ID přes URL je obrana komplikovanější, vyžaduje zabránit úniku URL přes referer (odkazy, obrázky, ...) a Session fixation.
+                                                </li>
+                                            </ul>
+                                            <br>
+                                            <hr>
+                                    </div>
+                                    <div>
+                                        <h4>Phishing</h3>
+                                            <p>
+                                                je aktivní útok využívající sociální inženýrství, při kterém útočník vydává svoje vlastní webové stránky za oficiální stránky instituce / aplikace, aby získal přihlašovací údaje uživatele.
+                                            </p>
+                                            <b> Obrana: </b>
+                                            <ul>
+                                                <li> Vzdělávání uživatelů v kontrole autentizace serveru, použití Extended Validation SSL Certificates.
+                                                </li>
+                                            </ul>
+                                            <br>
+                                            <hr>
+                                    </div>
+                                    <div>
+                                        <h4>SQL Injection</h3>
+                                            <p>
+                                                je technika napadení databázové vrstvy programu vsunutím (odtud „injection“) kódu přes neošetřený vstup a vykonání vlastního pozměněného SQL dotazu.
+                                            </p>
+                                            <b> Obrana: </b>
+                                            <ul>
+                                                <li> Důsledné používání tzv. PreparedStatement a jeho setXXX() metod pro nastavování hodnot.
+                                                </li>
+                                                <li> Tam kde se nejedná o hodnotu (třeba název sloupce v ORDER BY), zkontrolovat vstup regulárním výrazem na očekávané hodnoty.
+                                                </li>
+                                            </ul>
+                                            <br>
+                                            <hr>
+                                    </div>
+                                </div>
+                                <br>
+                                <h2 id="redakce">Redakční systémy a e-commerce</h2>
+                                <br>
+                                <div class="row">
+                                    <div class="container">
+                                        <div id="demo" class="carousel slide" data-ride="carousel">
+                                            <ul class="carousel-indicators">
+                                                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                                                <li data-target="#demo" data-slide-to="1"></li>
+                                                <li data-target="#demo" data-slide-to="2"></li>
+                                            </ul>
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <figure class="text-center">
+                                                        <img src="img/1.png" alt="carousel1" width="800" class="img-fluid">
+                                                    </figure>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <figure class="text-center">
+                                                        <img src="img/2.png" alt="carousel2" width="800" class="img-fluid">
+                                                    </figure>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <figure class="text-center">
+                                                        <img src="img/3.png" alt="carousel3" width="800" class="img-fluid">
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                                                <span class="carousel-control-prev-icon"></span>
+                                            </a>
+                                            <a class="carousel-control-next" href="#demo" data-slide="next">
+                                                <span class="carousel-control-next-icon"></span>
+                                            </a>
+                                        </div>
+                                        <br>
+                                        <hr>
+                                        <div>
+                                            <h3>Redakční systémy - CMS</h3>
+                                            <ul>
+                                                <p>
+                                                    Zkratkou CMS (Content Management System = systémy pro správu obsahu) je označován software, pro který se vžil častěji používaný název redakční systém. <br> Jedná se zpravidla o komplexní webovou aplikaci
+                                                    používanou pro tvorbu a úpravu obsahu webu bez znalostí kódování.
+                                                    <br> CMS tak může ušetřit náklady na aktualizaci obsahu webu, protože změny částí stránek může provádět i zaškolená obsluha bez znalosti kódu HTML, CSS či dalších technologií. <br>
+                                                </p>
+                                            </ul>
+                                        </div>
+                                        <br>
+                                        <hr>
+                                        <div>
+                                            <h3>Funkce redakčních systémů</h3>
+                                            <ul>
+                                                <p>
+                                                    V současnosti existuje celá řada redakčních systémů, které se vzájemně liší svými funkcemi i možnostmi použití. K předchůdcům CMS patří různá administrační rozhraní pro vkládání novinek a aktualit.
+                                                    <br> Složitější CMS umožňují vkládání různých článků a spotů (včetně tabulek a obrázků) do předem určených kategorií, případně úpravu všech textů na webu. <br> Používají se k tomu tzv. WYSIWYG editory,
+                                                    jejichž ovládání se velmi podobá ovládání běžných desktopových textových procesorů (např. MS Word), které fungují v internetových prohlížečích a v pozadí generují HTML kód. <br> K nejčastěji používaným
+                                                    patří FCKEditor a TinyMCE; v obou případech jde o javascriptové aplikace na straně klienta, jejichž prostředí lze libovolně konfigurovat a funkčnost rozšiřovat pomocí řady pluginů. <br> Častou funkcí
+                                                    CMS je i správa obrázků a celých fotogalerií, většina redakčních systémů obsahuje i moduly pro správu multimediálního obsahu, včetně audio a video souborů. <br> Výjimkou není ani možnost spravovat diskuse
+                                                    a komentáře. <br> Vyspělé CMS dokáží přímo manipulovat se strukturou webu a s využitím různých přídavných modulů přizpůsobovat funkce redakčního systému konečnému záměru - s jejich pomocí je tak možné
+                                                    vytvářet weblogy, firemní stránky, elektronické obchody, zpravodajské portály atd. <br>
+                                                </p>
+                                            </ul>
+                                        </div>
+                                        <br>
+                                        <hr>
+                                        <div>
+                                            <h3>Populární redakční systémy</h3>
+                                            <ul>
+                                                <p>
+                                                    Mezi populární a velmi rozšířené CMS patří Wordpress, Joomla! a Drupal.
+                                                    <br> WordPress je open source redakční systém napsaný v jazyce PHP a využívající databázový systém MySQL. Původně byl vyvinut se záměrem poskytnout platformu pro co nejpohodlnější zprovoznění blogovacího
+                                                    systému, ale díky rozsáhlé komunitě programátorů a existenci mnoha rozšíření je dnes základem nejrůznějších webových projektů. Jednou z výhod Wordpressu je snadná instalace jádra systému, po níž může
+                                                    následovat instalace různých doplňků (pluginů) i šablon grafického vzhledu (témat). <br> Redakční systém je spravován prostřednictvím administrační části aplikace (back-end), do níž mají přístup uživatelé
+                                                    podle nadefinovaných oprávnění. <br> V administraci lze měnit nastavení systému, instalovat i přizpůsobovat pluginy i témata, aktualizací, instalace a přizpůsobení témat), definovat strukturu webu (provádět
+                                                    změny menu, vytvářet kategorie i tzv. štítky), editovat a publikovat příspěvky (články v podobě aktualit) nebo statické stránky, vytvářet galerie obrázků i multimédií, sledovat statistiky přístupů a
+                                                    provádět řadu dalších operací.
+                                                    <br> Wordpress kromě jiného podporuje využití RSS kanálů a metod Trackback i Pingback (způsoby jak informovat určitou stránku, že je na ni z jiné stránky odkazováno; bohužel rovněž časté nástroje spammerů).
+                                                    <br> Nevýhodou Wordpressu, ale i jiných rozšířených CMS je množství útoků, které využívají slabých míst těchto systémů k jejich ovládnutí, poškození nebo i zneužití k jiné kybernetické kriminalitě. Při
+                                                    nasazení jakéhokoliv redakčního systému je proto nezbytné důsledně dodržovat všechny bezpečnostní zásady, zejména pravidelně aktualizovat jádro systému, ale i pluginy. <br>
+                                                </p>
+                                            </ul>
+                                        </div>
+                                        <br>
+                                        <hr>
+                                        <div>
+                                            <h3>E-commerce</h3>
+                                            <ul>
+                                                <p>Pojem e-commerce je používán k označení různých obchodních transakcí realizovaných prostřednictvím Internetu a dalších elektronických prostředků. Podle cílové skupiny rozlišujeme několik typů e-commerce:
+                                                    <br> B-2-B (Business to Business, obchodník obchodníkovi). Většinou fungují na principu elektronické výměny dat (objednávek, faktur). Vyšším stupněm jsou internetová tržiště pro zprostředkování obchodů.
+                                                    Nejvyspělejší variantou jsou komunikační a distribuční sítě, kde dochází k transakcím v reálném čase, včetně finančních a logistických operací. <br> B-2-C (Business to Consumer, obchodník zákazníkovi).
+                                                    Na základní úrovni je to webová stránka plnící funkci elektronického katalogu, doplněná případně o interaktivní formuláře s možností zpětné vazby. Nejvyšší úrovní je internetový obchod s možností online
+                                                    plateb.
+                                                    <br> C-2-B (Consumer to Business, zákazník obchodníkovi). Obchodní transakci iniciuje zákazník, když zadává požadavek na určitý produkt za určitou cenu. Obchodní partner sdělí, zda je ochoten požadavek
+                                                    akceptovat (např. poptávka na pokoj v penzionu). <br> C-2-C (Consumer to Consumer, zákazník zákazníkovi). Výměnný obchod mezi lidmi bez prostředníka - internetová spotřebitelská burza či elektronická
+                                                    aukce (např. použitého zboží, sběratelských předmětů apod.).
+                                                </p>
+                                            </ul>
+                                        </div>
+                                        <br>
+                                        <hr>
+                                        <div>
+                                            <h3>Elektronické obchody</h3>
+                                            <ul>
+                                                <p>
+                                                    je webová aplikace sloužící k nabídce a vyhledání zboží (služeb) s možností si je objednat (katalog zboží, elektronický košík). <br> E-shop je většinou realizován jako sada skriptů, které spolupracují
+                                                    s databází, v níž jsou uloženy detaily o zboží. <br> Aby co nejvíce ulehčil práci administrátorům, obsahuje kromě front-end aplikace pro zákazníky také back-end s řadou dalších funkcí - např. evidenci
+                                                    zboží, možnost úpravy cen, agendu skladu, možnost řešení reklamací, napojení na účetnické či logistické programy atd. <br> Mezi pokročilé služby patří generování datových souborů pro servery, které je
+                                                    agregují, možnosti elektronických plateb, statistiky návštěvnosti, nákupní tendence a profily chování zákazníků. <br> E-shop lze pořídit jako aplikaci připravenou na míru, využít některý z hotových produktů
+                                                    a případně zvolit vhodnou konfiguraci funkcí, pronajmout si e-shop jako internetovou službu (třeba i v cloudové variantě) nebo přizpůsobit vlastním požadavkům open source aplikace - např. PrestaShop
+                                                    nebo OpenCart.
+                                                    <br>
+                                                </p>
+                                            </ul>
+                                        </div>
+                                        <br>
+                                        <hr>
+                                        <div>
+                                            <h3>Statistiky používání e-shopu</h3>
+                                            <br>
+                                            <table>
+                                                <tr>
+                                                    <th>rok</th>
+                                                    <th>2015</th>
+                                                    <th>2016</th>
+                                                    <th>2017</th>
+                                                    <th>2018</th>
+                                                    <th>2019</th>
+                                                    <th>2020</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>mil. osob</th>
+                                                    <th>2.1</th>
+                                                    <th>2.3</th>
+                                                    <th>2.7</th>
+                                                    <th>3.0</th>
+                                                    <th>3.4</th>
+                                                    <th>4.7</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>% osob</th>
+                                                    <th>24%</th>
+                                                    <th>27%</th>
+                                                    <th>32%</th>
+                                                    <th>34%</th>
+                                                    <th>39%</th>
+                                                    <th>54%</th>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                    </div>
+                </div>
+    </main>
+
+
+    <footer class="p-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-8">
+                    <h5 class="text-primary text-uppercase border-bottom mb-4 pb-3">Autor</h5>
+                    <div>
+                        <p><b>Vojtěch Dohnal</b></p>
+                        <p>Github: <a href="https://github.com/pato694" target="_blank">https://github.com/pato694</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <div text-color="black">
+                        <p>
+                            <a href="https://www.sspu-opava.cz" target="_blank"><img src="img/skola-logo.png" alt="Logo školy"></a>
+                        </p>
+                        <p class="mt-5">&copy; 2021 - SŠPU Opava</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</body>
+
+</html>
